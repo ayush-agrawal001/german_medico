@@ -1,0 +1,43 @@
+.sort-by-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sort-by-button {
+    background-color: #009999;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .sort-by-button:hover {
+    background-color: #007777;
+  }
+  
+  .sort-by-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+  }
+  
+  .sort-by-options li {
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  .sort-by-options li:hover {
+    background-color: #f2f2f2;
+  }
+
+  

@@ -28,8 +28,8 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background: #00a9b8;
     cursor: pointer;
     border-radius: 20px 0px;

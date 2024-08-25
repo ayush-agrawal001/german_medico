@@ -5,7 +5,7 @@ import NavBar from "./ui/components/NavBar";
 import SideNavBar from "./ui/components/SideNav";
 import style from "@/app/navBar.module.css"
 import Footer from "./ui/components/footerP";
-
+import { AppProvider } from "./context/AppContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -21,14 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar />
-        <div className="container">
-          <div className="sidenav-container">
-            <SideNavBar />
-          </div>
-          <div className="content-container">{children}</div>
-        </div>
-        <Footer></Footer>
+        <AppProvider>
+            <NavBar />
+            <div className="container">
+              <div className="sidenav-container">
+                <SideNavBar />
+              </div>
+              <div className="content-container">{children}</div>
+            </div>
+            <Footer></Footer>
+        </AppProvider>
         </body>
     </html>
   );

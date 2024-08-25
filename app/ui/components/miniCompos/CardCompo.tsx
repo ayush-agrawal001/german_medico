@@ -3,8 +3,12 @@
 import '@/app/cardCompo.css';
 import Image from 'next/image';
 
-const CardComponent: React.FC = () => {
-  return (
+interface CardComponentProps {
+    onClick: () => void;
+}
+
+const CardComponent: React.FC<CardComponentProps> = ({ onClick }) => {
+     return (
     <div className="card">
       <div className="availability">
         <span className="not-available">• nicht lieferbar</span>
@@ -17,7 +21,7 @@ const CardComponent: React.FC = () => {
         <div className="info">
           <span className="thc">THC 18%</span>
           <span className="cbd">CBD &lt;1%</span>
-          <span className="icon">🙂</span>
+          <span className="icon"><Image src="/logo.svg" width={20} height={20} alt='logo' /></span>
         </div>
         <h2 className="product-name">Cannabis Flos 18/1 PT Mango</h2>
         <div className="product-attributes">
@@ -30,7 +34,7 @@ const CardComponent: React.FC = () => {
         </div>
         <div className="price-container">
           <span className="price">€ 11,66<sup>1</sup></span>
-          <button className="add-to-cart">in den Warenkorb</button>
+          <button className="add-to-cart" onClick={onClick}>in den Warenkorb</button>
         </div>
         <div className="price-note">pro Gramm</div>
       </div>

@@ -5,6 +5,7 @@ import '@/app/sideNavBar.css';
 import PriceRange from './miniCompos/PriceRange';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import SortByDropdown from './miniCompos/DropDown';
 
 interface RangeSliderProps {
   min: number;
@@ -33,11 +34,15 @@ const SideNavBar: React.FC<SideNavBarProps> = ({
       checked ? [...prev, value] : prev.filter((item) => item !== value)
     );
   };
-
+  const sortOptions = ['Option0', 'Option1'];
   const handleResetFilters = () => {
     setSelectedManufacturers([]);
     setSelectedGenetics('');
     setSelectedIrradiation('');
+  };
+
+  const handleSortChange = (option: string) => {
+    console.log(`Selected sort option: ${option}`);
   };
 
   return (
@@ -111,8 +116,7 @@ const SideNavBar: React.FC<SideNavBarProps> = ({
 
       <div className="filter-section">
         <div className='dropSection'>
-          <h4>Terpene</h4>
-          <span><FontAwesomeIcon icon={faCaretDown} /></span>
+          <SortByDropdown options={sortOptions} onSortChange={handleSortChange} name= "Tarpene" />
         </div>
       </div>
 

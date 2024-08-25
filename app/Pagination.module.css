@@ -1,0 +1,48 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+  
+  .arrow {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0070f3;
+    padding: 8px;
+  }
+  
+  .arrow:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pageNumbers {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .pageNumber {
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #0070f3;
+    padding: 8px;
+    margin: 0 4px;
+  }
+  
+  .pageNumber:hover {
+    color: #0056a3;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #000;
+  }
+
+  
+  

@@ -1,0 +1,34 @@
+.skeletonContainer {
+    border: 3px groove #4edde1;
+    border-radius: 20px 0px;
+    overflow: hidden;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #e0f4f4;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+  
+  .skeletonHeader {
+    width: 50%;
+    height: 20px;
+    background: #e0e0e0;
+    margin-bottom: 15px;
+  }
+  
+  .skeletonImage {
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
+    margin-bottom: 15px;
+  }
+  
+  .skeletonText {
+    width: 100%;
+    height: 15px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+  }
+  
+
+  

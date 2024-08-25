@@ -1,3 +1,10 @@
+@media (max-width: 768px){
+  .side-nav{
+    display: none;
+  }
+}
+
+
 .side-nav {
     width: 250px;
     background: transparent;
@@ -33,6 +40,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+  }
+
+  .dropSection button::before{
+    background-color: transparent;
   }
 
   .dropSection :hover{
