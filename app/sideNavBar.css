@@ -1,0 +1,108 @@
+.side-nav {
+    width: 250px;
+    background: transparent;
+    padding: 20px;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    margin-left: 13%;
+  }
+  
+  .side-nav h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    background-color: rgb(237, 246, 245);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-section {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px rgb(206, 235, 234);
+  }
+  
+  .filter-section h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .filter-section .dropSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .dropSection :hover{
+    cursor: pointer;
+  }
+
+  .dropSection span{
+    margin-top: 10px;
+  }
+
+  .filter-options {
+    list-style-type: none;
+    padding: 0;
+
+  }
+  
+  .filter-options li {
+    margin-bottom: 10px;
+  }
+  
+  .filter-options input[type='checkbox'] {
+    margin-right: 10px;
+    accent-color: rgb(239, 241, 239);
+    
+  }
+  .show-more {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px 0px;
+    background: transparent;
+    border-color: yellowgreen;
+    padding-bottom: 5px;
+  }
+
+  .show-more:hover {
+    outline: none;
+    box-shadow: none
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group .button {
+    flex: 1;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .button-group .button.active {
+    background-color: rgb(98, 195, 198);
+    color: #fff;
+  }
+  
+  .button-group .button:not(.active) {
+    background-color: rgb(206, 235, 234);
+  }
+  
+  .reset-filters {
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .reset-filters:hover {
+    text-decoration: underline; 
+  }
+  

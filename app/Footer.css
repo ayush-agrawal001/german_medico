@@ -1,0 +1,50 @@
+.footer {
+    background-color: #009999;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-left{
+    align-self: flex-end;
+    justify-content: end;
+    color: white;
+    opacity: 0.5;
+}
+
+.footer-middle{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+}
+
+.footer-middle div{
+    width: max-content;
+    margin: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right p{
+    margin: 20px;
+    font-weight: 700;
+}
+
+.footer p strong{
+    opacity: 0.5;
+    margin-bottom: 20%;
+} 
